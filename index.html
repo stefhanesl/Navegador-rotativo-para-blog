@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title & circle</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    
+        <div class="content">
+            <h1>Muestreo de Thompson</h1>
+            <small>Concepto</small>
+            <p>El muestreo de Thompson es una de las heurísticas más antiguas para resolver el problema de los bandidos con múltiples brazos. Este es un algoritmo probabilístico basado en ideas bayesianas. Se llama muestreo porque toma muestras aleatorias de una distribución de probabilidad para cada brazo. Esto podría definirse como un sampler Beta Bernoulli. Aunque el muestreo de Thompson se puede generalizar para muestrear cualquier distribución arbitraria. Pero la versión Beta Bernoulli del muestreo de Thompson es más intuitiva y en realidad es la mejor opción para muchos problemas en la práctica.</p>
+            
+            <h3>Tres bandidos de múltiples brazos con las siguientes distribuciones</h3>
+            <img src="./Thompson_Sampling.png" alt="distribuciones" />
+            <p>El Muestreo de Thompson no crea un mecanismo para resolver el problema, sino que asocia una distribución de probabilidad a cada uno de los bandidos. Distribución que se puede usar para estimar los resultados originales. A medida que aumenta el número de veces que se ha jugado con cada uno de los bandidos, la forma de las distribuciones se irá haciendo más estrechas en torno a la media. Por lo que, al obtener una muestra de cada una de las distribuciones es más probable que esta se encuentre cerca del valor esperado para ese bandido.</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="#"> Home</a></li>
+            <li><i class="fas fa-user-alt"></i><a href="#"> About</a></li>
+            <li><i class="fas fa-envelope"></i><a href="#"> Contact</a></li>
+          </ul>
+    </nav>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
